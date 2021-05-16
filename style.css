@@ -64,13 +64,13 @@ body{
   left: 60%;
 }
 
-.circle button#close{
+.circle button#close {
   top: 60%;
   transform: rotate(90deg);
-  transform-origin: top left;
+  transform-origin: center;
 }
 
-.container.show-nav nav li{
+.container.show-nav + nav li{
   transform: translateX(0);
   transition-delay: 0.3s;
 }
@@ -102,6 +102,11 @@ nav ul li i{
 
 nav ul li + li{
   margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li{
+  margin-left: 30px;
   transform: translateX(-200%);
 }
 
@@ -110,7 +115,7 @@ nav ul li + li{
 }
 
 .content{
-  max-width: 100px;
+  max-width: 1000px;
   margin: 50px auto;
 }
 
